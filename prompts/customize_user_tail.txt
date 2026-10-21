@@ -1,0 +1,8 @@
+Use bold for company names and dates, highlight keywords within the resume. Do not add additional sections in my resume, just try to modify the content within it according to the job description. keep name and location in the center and rest all in single line.
+
+Use the exact same resume format example given and the content but you can modify the content relevant to job description; which means you are allowed to remove if unnecessary, and bold some content that is matching with the job description. Tailor the resume as per job description given but change maximum of 2 lines per work experience to make it ats friendly if necessary
+
+you can update the content as per job description to make it ATS friendly and parsable but format should be same and try not to make too many changes to work experience description i.e; the things  I haven't done. create a balance between job description and resume, and make it ats friendly.
+Try not to make up things in professional summary too much but you can update the skills sections and bit of work experience(maxiumum 1Line per work experience if necessary for ATS). Leave project headings as is.
+
+Output only in latex format using the input above- use the exact same format just change the content relevant to job description, nothing else.

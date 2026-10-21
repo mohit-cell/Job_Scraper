@@ -1,0 +1,9 @@
+streamlit>=1.40
+pandas
+apify-client
+openai>=1.60
+requests
+python-dotenv
+google-api-python-client
+google-auth
+google-auth-oauthlib
