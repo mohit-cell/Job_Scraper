@@ -46,9 +46,9 @@ with st.sidebar:
     st.title("⚙️ Parameters")
 
     with st.expander("🔑 API keys", expanded=not os.getenv("OPENAI_API_KEY")):
-        apify_token = st.text_input("Apify token", os.getenv("APIFY_TOKEN", "apify_api_jUq3mzM3Vc2NGrVPgWnVN5DGwDnU9d3Aobwz"), type="password")
-        openai_key = st.text_input("OpenAI API key", os.getenv("OPENAI_API_KEY", "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"), type="password")
-        github_token = st.text_input("GitHub token (contents: write)", os.getenv("GITHUB_TOKEN", "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"), type="password")
+        apify_token = st.text_input("Apify token", os.getenv("APIFY_TOKEN", ""), type="password")
+        openai_key = st.text_input("OpenAI API key", os.getenv("OPENAI_API_KEY", ""), type="password")
+        github_token = st.text_input("GitHub token (contents: write)", os.getenv("GITHUB_TOKEN", ""), type="password")
 
     with st.expander("🔎 Job search", expanded=True):
         keywords = st.text_input("Job keywords", d.keywords)

@@ -63,8 +63,8 @@ class Config:
     sheet_gid: int = 0
     drive_folder_id: str = "1Ef9EHKofPxQ_WrXq9bUP_Hy5Pod_ERSX"
     # github (stores .tex so latexonline.cc can compile it)
-    github_owner: str = "teja219"
-    github_repo: str = "jobs_apply"
+    github_owner: str = "mohit-cell"
+    github_repo: str = "Job_Scraper"
     # llm
     model: str = "gpt-4.1-mini"
     # behaviour
