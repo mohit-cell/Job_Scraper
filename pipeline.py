@@ -56,12 +56,12 @@ class Config:
     max_jobs_to_evaluate: int = 0
     max_resumes: int = 0
     # resume source
-    resume_doc_id: str = "155Y6LG6movJA2VNLiYpMZHDom4Bg7Lh5_PbV_-GxtHc"
+    resume_doc_id: str = "1DhY0MGPn29DsYZWRfB2BdsGDrJ6sq5XrvOrw6ly4P-w"
     resume_text_override: str = ""  # if set, Google Doc is not read
     # google sheet / drive
-    sheet_id: str = "1x5kqCDx25J5cQlnd_wsfbEmKfAPukgJ3SbdunOOYzEQ"
+    sheet_id: str = "1dh3U13kqyF7Kn1godCZZ_6QSRROwItz58d5Sf8dW4TE"
     sheet_gid: int = 0
-    drive_folder_id: str = "1Ef9EHKofPxQ_WrXq9bUP_Hy5Pod_ERSX"
+    drive_folder_id: str = "1C0YPEEmJOG_jal_smXJhTyFS7tqS5_BH"
     # github (stores .tex so latexonline.cc can compile it)
     github_owner: str = "mohit-cell"
     github_repo: str = "Job_Scraper"
