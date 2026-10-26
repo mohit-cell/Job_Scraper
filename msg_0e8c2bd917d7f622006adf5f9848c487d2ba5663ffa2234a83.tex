@@ -1,0 +1,205 @@
+% Resume: Arumalla Mohit Krishna
+% Compile with pdfLaTeX.
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage[margin=0.5in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pdfgentounicode=1
+\pagestyle{empty}
+\urlstyle{same}
+\raggedright
+\setlength{\parindent}{0pt}
+\setlength{\tabcolsep}{0pt}
+
+\titleformat{\section}
+  {\large\scshape}{}{0em}{}[\titlerule]
+
+\titlespacing*{\section}{0pt}{6pt}{3pt}
+
+\newcommand{\entry}[2]{%
+  \noindent
+  \begin{tabularx}{\linewidth}
+    {@{}>{\raggedright\arraybackslash}X@{\hspace{6pt}}r@{}}
+    \textbf{#1} & #2
+  \end{tabularx}\par
+}
+
+\newcommand{\bullets}{
+  \begin{itemize}[
+    leftmargin=1.2em,
+    topsep=2pt,
+    itemsep=1pt,
+    parsep=0pt,
+    partopsep=0pt
+  ]
+}
+
+\newcommand{\finishbullets}{
+  \end{itemize}
+}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\LARGE\bfseries Arumalla Mohit Krishna}\\[3pt]
+    +1 (631) 352-8643 $|$
+    \href{mailto:mohitkrishna.arumalla@stonybrook.edu}
+    {mohitkrishna.arumalla@stonybrook.edu} $|$
+    \href{https://linkedin.com/in/mohit-krishna-arumalla}
+    {LinkedIn}
+\end{center}
+\vspace{-8pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+
+\entry
+  {\textbf{Stony Brook University}}
+  {Aug 2025 -- Dec 2026}
+
+M.S. in Computer Science \hfill New York, USA\\
+\textit{
+Coursework: \textbf{Natural Language Processing},
+Introduction to Computer Vision, Vision Language Modeling
+}
+\vspace{3pt}
+
+\entry
+  {\textbf{Birla Institute of Technology and Science, Pilani}}
+  {Aug 2019 -- 2023}
+
+B.E. in Electronics \& Communication; GPA: 8.02/10 \hfill India
+%-----------PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+
+Software engineer with 2+ years of experience in \textbf{AI and machine learning solution development},
+building distributed services and real-time data pipelines. Currently pursuing an M.S.
+in Computer Science at Stony Brook University with specialized knowledge in \textbf{Generative AI},
+deep learning frameworks, and scalable \textbf{data processing pipelines}. Skilled in Python, PyTorch,
+TensorFlow, Kubernetes, and cloud infrastructure with strong collaboration and communication abilities.
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+
+\textbf{Languages:}
+Python, Go, C++, SQL, Java\\
+
+\textbf{ML \& AI Frameworks:}
+PyTorch, TensorFlow/Keras, scikit-learn, NumPy, pandas,
+Transformers, Generative AI, Deep Learning,
+Self-Supervised Learning, Vision Transformers,
+LoRA, Visual Prompt Tuning, Text Embeddings, Vector Search\\
+
+\textbf{Data Engineering \& Systems:}
+gRPC, Kafka, Apache Flink, Flink SQL, Debezium/CDC,
+PostgreSQL, Redis, Elasticsearch, Airflow, BigQuery,
+\textbf{Kubernetes}, HPC clusters, Spark\\
+
+\textbf{Infrastructure:}
+NVIDIA Triton, AWS, Docker, Kubernetes, Linux, Git,
+CI/CD, Istio/Envoy, New Relic, Cloud Native Tools
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+
+\entry
+  {\textbf{Software Engineer II} $|$ \textbf{Infra.Market, Bangalore}}
+  {Apr 2024 -- Aug 2025}
+
+\bullets
+
+  \item Designed and implemented scalable AI/ML applications integrating Amazon Titan text embeddings
+  with Elasticsearch vector search for enhanced semantic product discovery.
+
+  \item Engineered a high-throughput CDC pipeline using Flink, Kafka, Debezium,
+  PostgreSQL, and Elasticsearch, enabling near real-time data synchronization (<500 ms latency)
+  with strong data consistency guarantees.
+
+  \item Deployed and maintained Kubernetes clusters with Istio/Envoy service mesh,
+  integrating distributed tracing via New Relic for secure and robust production monitoring.
+
+\finishbullets
+
+\entry
+  {\textbf{Software Engineer I} $|$ \textbf{Infra.Market, Chennai}}
+  {Jul 2023 -- Mar 2024}
+
+\bullets
+
+  \item Owned development of Search and Location microservices; created performant gRPC services
+  handling 500K+ daily requests, supporting critical business workflows and geospatial features.
+
+  \item Resolved PostgreSQL connection pool leaks using Gorm ORM, improving system stability
+  and throughput by 85\%; validated fixes with high-concurrency load testing.
+
+  \item Automated Airflow pipelines for data migration from BigQuery to Elasticsearch with
+  dynamic filtering and stale-index monitoring to maintain data quality and freshness.
+
+\finishbullets
+
+%-----------PROJECTS-----------
+\section{Projects}
+
+\entry
+  {GPU-Optimized Personalized Product Search}
+  {Aug 2026 -- Oct 2026}
+
+\textit{Python, PyTorch, BGE, NVIDIA Triton, Go, gRPC}
+
+\bullets
+
+  \item Developed two-tower retrieval model using \texttt{BAAI/bge-small-en-v1.5} embeddings for
+  query and product, combining with user interaction histories to personalize search.
+
+  \item Built scalable inference pipeline with precomputed embeddings, approximate nearest-neighbor
+  search, and GPU-accelerated query encoding via NVIDIA Triton, supporting low-latency production use.
+
+  \item Benchmarked throughput, latency, and resource utilization under varied traffic,
+  optimizing for \textbf{scalable and robust AI inference} serving with recall and NDCG metrics.
+
+\finishbullets
+
+\entry
+  {Attention-Based Hallucination Detection in NMT}
+  {Apr 2026 -- May 2026}
+
+\textit{Python, PyTorch, mBART, Transformers, scikit-learn}
+
+\bullets
+
+  \item Built English-German hallucination detection pipeline leveraging teacher-forced mBART attention
+  features and WMT22/WMT23 quality estimation datasets.
+
+  \item Extracted detailed cross/self-attention metrics across decoder layers and heads for deep model interpretability.
+
+  \item Trained classifiers achieving 0.712 F1 and 0.695 ROC-AUC; proposed hallucination-aware reranking
+  methods integrating attention-based risk scores.
+
+\finishbullets
+
+\entry
+  {Prompt/LoRA for Self-Supervised Learning}
+  {Ongoing}
+
+\textit{Python, PyTorch, Vision Transformers}
+
+\bullets
+
+  \item Researching domain-specialized visual prompt tuning and parameter-efficient LoRA adapters within
+  self-supervised ViT architectures to improve cross-domain transferability.
+
+  \item Evaluating performance impacts of modular adaptation methods on classification accuracy
+  and parameter efficiency under domain shifts.
+
+\finishbullets
+
+\end{document}
