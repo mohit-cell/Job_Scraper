@@ -1,0 +1,183 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\bullet$}
+\renewcommand\labelitemii{$\bullet$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%--------------- Header (centered) ---------------
+\begin{center}
+  {\Large \textbf{Arumalla Mohit Krishna}} \\
+  New York, USA \\
+  +1-631-352-8643 \enspace | \enspace mohitkrishna.arumalla@stonybrook.edu \enspace | \enspace \href{https://www.linkedin.com/in/mohit-krishna-arumalla}{linkedin.com/in/mohit-krishna-arumalla}
+\end{center}
+
+%--PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Software Engineer} with 2+ years of experience in building and optimizing \textbf{backend systems} and \textbf{distributed applications} using \textbf{Python} and Go. Proficient in developing robust, scalable microservices, optimizing databases such as \textbf{PostgreSQL} and \textbf{Redis}, and enhancing system performance and reliability. Experienced in \textbf{automated testing} and \textbf{CI/CD} pipelines. Currently pursuing an MS in Computer Science at \textbf{Stony Brook University}, looking to contribute backend expertise and strong problem-solving skills to innovative teams.
+    }}
+  \end{itemize}
+\vspace{-16pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}: Python, Go, Java, C/C++, TypeScript \\
+     \textbf{Backend and Frameworks}: Django, FastAPI, Node.js, RESTful APIs, gRPC, Microservices, Celery \\
+     \textbf{Databases and Caching}: PostgreSQL, Redis, Elasticsearch, RocksDB \\
+     \textbf{Distributed Systems \& Messaging}: Apache Flink, Kafka, CDC, Airflow, AmazonMQ \\
+     \textbf{Cloud and Infrastructure}: AWS (EC2, S3, Lambda), Terraform, Docker, Kubernetes, CI/CD, New Relic \\
+     \textbf{Testing and Observability}: Automated testing, code reviews, performance optimization, monitoring with New Relic
+    }}
+ \end{itemize}
+\vspace{-16pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Master of Science in Computer Science}{\textbf{Aug 2025 -- Dec 2026}}
+      {Stony Brook University, New York, USA}{}
+    \resumeSubheading
+      {Bachelor of Engineering in Electronics and Communication}{\textbf{Aug 2019 -- 2023}}
+      {Birla Institute of Technology and Science, Pilani, India}{GPA: 8.02/10}
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer II}{\textbf{Apr 2024 -- Aug 2025}}
+      {\textbf{Infra.Market}}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Engineered a real-time CDC pipeline using Apache Flink, Kafka, Debezium, RocksDB, \textbf{PostgreSQL}, and Elasticsearch, reducing synchronization latency from 10--15 minutes to $\sim$500 ms with exactly-once processing semantics.}
+        \resumeItem{Developed backend microservices optimized for performance and reliability to support product search and real-time data workflows.}
+        \resumeItem{Deployed an Istio/Envoy service mesh across 15+ microservices, enabling tracing and observability with \textbf{New Relic}, improving system monitoring.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer I}{\textbf{Jul 2023 -- Mar 2024}}
+      {\textbf{Infra.Market}}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Owned backend Search and Location microservices with \textbf{gRPC} interfaces handling 500K+ daily requests to optimize product discovery and geolocation services.}
+        \resumeItem{Resolved PostgreSQL connection leaks in the Location service using Gorm ORM, reducing connection pool exhaustion by 85\%; validated under load of 10K requests/second.}
+        \resumeItem{Built and optimized Apache Airflow pipelines migrating data from BigQuery to Elasticsearch with query tuning and dynamic filtering, including Slack alerts for index monitoring.}
+        \resumeItem{Improved endpoint and query performance through profiling and optimization, enhancing user-facing application responsiveness.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \vspace{-5pt}
+    \resumeSubHeadingListStart
+
+      \resumeProjectHeading
+          {\textbf{CodeLens} -- \emph{Python, Elasticsearch, PyTorch}}{\textbf{Sept 2026}}
+          \resumeItemListStart
+            \resumeItem{Built a repository-aware RAG service mapping errors and stack traces to source locations using Tree-sitter, hybrid BM25/vector retrieval, and LLM explanations with commit-specific file and line citations.}
+            \resumeItem{Fine-tuned a cross-encoder reranker on query-code pairs and hard negatives, using Weights \& Biases Sweeps for hyperparameter tuning and logging of loss, ranking metrics, and checkpoints.}
+            \resumeItem{Implemented incremental Git indexing, FastAPI serving, and Redis caching; evaluated Recall@10, MRR@10, citation correctness, and p95 latency.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\textbf{Scalable Distributed Banking System} -- \emph{Go, gRPC, Redis, Permissioned Blockchain}}{\textbf{Aug 2025}}
+          \resumeItemListStart
+            \resumeItem{Developed a fault-tolerant banking platform in Go using Linear PBFT consensus, RSA signatures, and SHA-256 hashing to preserve transaction integrity under Byzantine failures.}
+            \resumeItem{Designed a replicated sharded architecture (12 servers, 30,000-key datastore) with cross-shard atomic transactions via Two-Phase Commit (2PC), handling up to 8,000 TPS.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+      \resumeProjectHeading
+          {\textbf{Attention-Based Hallucination Detection in NMT} -- \emph{Python, PyTorch, mBART}}{\textbf{Dec 2025}}
+          \resumeItemListStart
+            \resumeItem{Built an English--German hallucination detection pipeline using mBART attention features (WMT22/WMT23): entropy, attention mass, grounding ratios.}
+            \resumeItem{Trained token-, sentence-, and head-level classifiers on 50K WMT examples, achieving 0.712 F1 and 0.695 ROC-AUC.}
+          \resumeItemListEnd
+          \vspace{-13pt}
+
+    \resumeSubHeadingListEnd
+
+\end{document}
