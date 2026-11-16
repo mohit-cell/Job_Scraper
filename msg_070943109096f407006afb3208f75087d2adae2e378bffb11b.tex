@@ -1,0 +1,177 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\bullet$}
+\renewcommand\labelitemii{$\bullet$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%--------------- Header (centered) ---------------
+\begin{center}
+  {\Large \textbf{Arumalla Mohit Krishna}} \\
+  New York, USA \\
+  +1-631-352-8643 \enspace | \enspace mohitkrishna.arumalla@stonybrook.edu \enspace | \enspace \href{https://www.linkedin.com/in/mohit-krishna-arumalla}{linkedin.com/in/mohit-krishna-arumalla}
+\end{center}
+
+%--PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Software Engineer} with 2+ years of experience designing and developing distributed backend systems and scalable microservices. Proficient in \textbf{C++}, \textbf{Go}, and \textbf{Python}, with expertise in \textbf{multithreaded programming}, \textbf{Linux environments}, and \textbf{performance debugging} using profiling tools. Skilled at building robust \textbf{distributed storage} and \textbf{data path} solutions in cloud environments. Currently pursuing an MS in Computer Science at \textbf{Stony Brook University}.
+    }}
+  \end{itemize}
+\vspace{-16pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}: C/C++, Go, Python, Java, TypeScript \\
+     \textbf{Systems \& Distributed}: Linux, Multithreaded Programming, eBPF, FastAPI, gRPC, Microservices, Istio/Envoy \\
+     \textbf{Distributed Systems}: Apache Flink, Kafka, CDC, Airflow, Raft, Paxos, Storage Infrastructure \\
+     \textbf{Databases \& Storage}: PostgreSQL, Elasticsearch, Redis, RocksDB, BigQuery \\
+     \textbf{Cloud \& Infrastructure}: AWS (EC2, S3, Lambda), Docker, Kubernetes, CI/CD, New Relic \\
+     \textbf{Performance \& Debugging}: GDB, perf, Profiling, Adaptive CPU Scheduling \\
+     \textbf{Machine Learning \& Retrieval}: PyTorch, Transformers, RAG, Text Embeddings, Hybrid Search (BM25 + Vector), Cross-Encoder Reranking
+    }}
+ \end{itemize}
+\vspace{-16pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Master of Science in Computer Science}{Aug 2025 -- Dec 2026}
+      {Stony Brook University, New York, USA}{}
+    \resumeSubheading
+      {Bachelor of Engineering in Electronics and Communication}{Aug 2019 -- 2023}
+      {Birla Institute of Technology and Science, Pilani, India}{GPA: 8.02/10}
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Software Engineer II}{Apr 2024 -- Aug 2025}
+      {\textbf{Infra.Market}}{Bangalore, India}
+      \resumeItemListStart
+        \resumeItem{Engineered a real-time CDC pipeline using Apache Flink, Flink SQL, Kafka, Debezium, RocksDB, PostgreSQL, and Elasticsearch, reducing synchronization latency from 10--15 minutes to $\sim$500 ms with exactly-once processing semantics.}
+        \resumeItem{Built semantic product search using Amazon Titan Text Embeddings and Elasticsearch vector search, enabling natural-language product discovery through chat interfaces.}
+        \resumeItem{Deployed an Istio/Envoy service mesh across 15+ microservices, enabling distributed tracing and centralized observability through New Relic for production monitoring and debugging.}
+        \resumeItem{Applied \textbf{profiling and debugging tools} to optimize and resolve service performance and reliability issues, enhancing data path efficiency.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer I}{Jul 2023 -- Mar 2024}
+      {\textbf{Infra.Market}}{Chennai, India}
+      \resumeItemListStart
+        \resumeItem{Owned Search and Location microservices, developing gRPC-based backend services handling 500K+ daily requests for product discovery and geolocation across distributed cloud infrastructure.}
+        \resumeItem{Resolved PostgreSQL connection leaks in the Location service using Gorm ORM, reducing connection-pool exhaustion by 85\%; validated fixes through concurrent load testing at 10K requests/second.}
+        \resumeItem{Optimized frontend performance with lazy loading, memoization, and debounced search, reducing time-to-interactive by 45\% and improving LCP from 4.2s to 1.8s.}
+        \resumeItem{Built Apache Airflow pipelines to migrate BigQuery data to Elasticsearch with query optimization and dynamic filtering; automated monitoring and Slack alerts to detect stale search indices.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{Adaptive Affinity-Aware CPU Scheduler}}{Oct 2026 -- Present}
+  \resumeItemListStart
+    \resumeItem{Implemented a two-level scheduler in C using eBPF and Linux sched\_ext, combining load-aware CPU affinity with per-CPU EEVDF-inspired virtual-deadline scheduling on a 4-vCPU ARM64 Linux environment.}
+    \resumeItem{Added adaptive affinity control, bounded work stealing, migration cooldowns, migration-aware virtual-runtime accounting, and CPU-mask enforcement to improve system concurrency and fairness.}
+    \resumeItem{Built benchmarks for 2--16 runnable workers to track p95/p99 wakeup latency, throughput, migrations per second, and weighted CPU fairness; ongoing evaluation compares adaptive, fixed-affinity, and stock Linux policies.}
+  \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{CodeLens: Graph-Based Debugging Assistant}}{Jan 2026 -- Apr 2026}
+  \resumeItemListStart
+    \resumeItem{Built a repository-aware RAG assistant combining Tree-sitter code dependency graphs, BM25/vector search, and graph traversal to localize errors and retrieve relevant callers and tests with commit-specific source citations.}
+    \resumeItem{Fine-tuned a cross-encoder reranker on query–code pairs and hard negatives using Weights \& Biases Sweeps for hyperparameter tuning and experiment tracking; implemented incremental graph/index updates, FastAPI serving, and Redis caching.}
+    \resumeItem{Added Git-diff impact analysis for change-aware bug localization and instrumented bug-localization time, code-change completion time, Recall@5, and p95 latency for controlled evaluation.}
+  \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{Scalable Distributed Banking System} -- \emph{Go, gRPC, Redis}}{Aug 2025}
+  \resumeItemListStart
+    \resumeItem{Developed a fault-tolerant banking platform in Go using Linear PBFT consensus, RSA signatures, and SHA-256 hashing to preserve transaction integrity under Byzantine failures.}
+    \resumeItem{Designed a replicated sharded architecture across 12 servers and a 30,000-key datastore; implemented atomic cross-shard transactions with Two-Phase Commit (2PC), handling up to 8,000 TPS under concurrent workloads.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+\end{document}
