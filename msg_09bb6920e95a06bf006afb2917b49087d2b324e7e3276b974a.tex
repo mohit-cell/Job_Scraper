@@ -1,0 +1,186 @@
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\bullet$}
+\renewcommand\labelitemii{$\bullet$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%--------------- Header (centered) ---------------
+\begin{center}
+  {\Large \textbf{Swetha Lekkalapudi}} \\
+  \href{mailto:swetha.lekkalapudi@stonybrook.edu}{swetha.lekkalapudi@stonybrook.edu} \enspace | \enspace +1 934-255-5205 \enspace | \enspace \href{https://www.linkedin.com/in/swetha-lekkalapudi/}{linkedin.com/in/swetha-lekkalapudi} \enspace | \enspace \href{https://github.com/lekkalapudiswetha-work}{github.com/lekkalapudiswetha-work}
+\end{center}
+
+%--PROFESSIONAL SUMMARY-----------
+\section{Professional Summary}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Software Engineer} with 3+ years of experience designing and developing scalable, resilient systems and APIs. Skilled in \textbf{Python}, \textbf{C++}, and \textbf{SQL}, with strong background in \textbf{cloud-native architectures}, \textbf{API development}, and software reliability. Experienced in end-to-end ownership of features including design, development, testing, and deployment. Pursuing an MS in \textbf{Artificial Intelligence} focusing on probabilistic modeling and uncertainty quantification. Motivated to build customer-focused solutions with AI and cloud services.
+    }}
+  \end{itemize}
+\vspace{-16pt}
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}: Python, C++, SQL \\
+     \textbf{Cloud and APIs}: REST APIs, Docker, AWS Lambda, S3 integration, FastAPI \\
+     \textbf{Machine Learning}: PyTorch, TensorFlow, Bayesian inference, CNNs, uncertainty quantification \\
+     \textbf{Frameworks and Tools}: TensorFlow/Keras, scikit-learn, XGBoost, NumPy, pandas \\
+     \textbf{Software Engineering}: Agile development, debugging, testing, CI/CD pipelines
+    }}
+ \end{itemize}
+\vspace{-16pt}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Master of Science in Engineering Artificial Intelligence}{Jan 2026 -- May 2027 (Expected)}
+      {Stony Brook University}{GPA: 3.89/4.0}
+    \resumeSubheading
+      {Bachelor of Technology in Computer Science \& Engineering}{Jul 2018 -- May 2022}
+      {Karunya Institute of Technology and Sciences}{GPA: 8.47/10 | Merit-1 Scholar}
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Student Researcher – Computational Neurology Lab}{Sep 2026 -- Present}
+      {\textbf{Stony Brook Medicine}, Department of Neurology}{}
+      \resumeItemListStart
+        \resumeItem{Extending a three-branch CNN into a Bayesian CNN framework to improve \textbf{interpretability} and \textbf{predictive uncertainty} for post-surgical epilepsy outcome classification, with application focus on clinical decision support.}
+        \resumeItem{Defining evaluation protocols using cross-validation, discrimination metrics, and uncertainty calibration to compare baseline and uncertainty-aware models.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {M.S. Thesis Research}{May 2026 -- Present}
+      {\textbf{Stony Brook University}}{}
+      \resumeItemListStart
+        \resumeItem{Developing probabilistic selective state-space models for \textbf{sequence classification} and \textbf{latent state estimation} using Rao–Blackwellized particle filtering to provide \textbf{uncertainty-aware predictions}.}
+        \resumeItem{Designing evaluation metrics for classification accuracy, state-estimation error, and uncertainty calibration incorporating particle-based label hypotheses and Kalman recursions.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer}{Aug 2022 -- Dec 2025}
+      {\textbf{Zinier}}{}
+      \resumeItemListStart
+        \resumeItem{Led a development team resolving critical \textbf{data exposure}, \textbf{access-control}, and \textbf{memory-leak} issues for Virgin Media’s cloud platform, coordinating debugging, fixes, testing, and deployment.}
+        \resumeItem{Acted as subject matter expert on the scheduling engine, collaborating with customers and internal teams to configure complex workflows for technician jobs and dispatch, improving service reliability.}
+        \resumeItem{Designed and implemented \textbf{third-party integration APIs}, facilitating reliable data exchange; contributed to solution architecture and production delivery, earning two ZSpark Quarterly Awards for client impact.}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Software Engineer Intern}{Mar 2022 -- Aug 2022}
+      {\textbf{Zinier}}{}
+      \resumeItemListStart
+        \resumeItem{Developed and configured \textbf{customer-facing features} on a low-code enterprise platform, collaborating with senior engineers on application workflows and backend integrations.}
+        \resumeItem{Participated actively in Agile debugging, quality assurance, testing, and feature delivery across multiple product components.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+\vspace{-12pt}
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{Adaptive LLM Retrieval \& Reranking}}{Jan -- May 2026}
+  \resumeItemListStart
+    \resumeItem{Built an adaptive retrieval and reranking pipeline with \textbf{relevance scoring}, \textbf{query refinement}, and \textbf{stateful decision logic} to optimize retrieval quality and efficiency.}
+    \resumeItem{Improved MRR@10 from 0.53 to 0.73 and Precision@10 from 0.16 to 0.24 over BM25 baseline, demonstrating significant performance gains.}
+  \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{Diffusion-Inspired Iterative Refinement for Language Models}}{Jan -- May 2026}
+  \resumeItemListStart
+    \resumeItem{Developed a BERT-base iterative inference pipeline using \textbf{masked-token prediction}, \textbf{confidence-based acceptance}, and targeted re-masking to enhance output quality.}
+    \resumeItem{Achieved 31\% relative BLEU improvement over single-pass inference on WikiText-103 dataset at 25 steps and 30\% corruption.}
+  \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{Time-Series Forecasting \& Model Evaluation}}{Jan -- May 2026}
+  \resumeItemListStart
+    \resumeItem{Built a five-day SPY direction prediction system with \textbf{engineered features} and leakage-aware splits; tested robustness over multiple synthetic time-series data processes.}
+    \resumeItem{Evaluated models including ARIMAX, logistic regression, XGBoost, LSTM, and stacking; top XGBoost model achieved an F1 score of 0.698.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}
